@@ -16,10 +16,13 @@
 
 *Em duplas, respondam às seguintes questões:*
 
-1. **Quem utilizará o sistema?**
-2. **Cite 3 requisitos funcionais** *(o que o sistema deve fazer)*.
-3. **Cite 2 requisitos não funcionais** *(como o sistema deve funcionar)*.
-4. **Explique, em poucas palavras**, por que é importante levantar os requisitos antes de desenvolver um software.
+1. **Quem utilizará o sistema?**  Alunos, professores e coordenadores da escola.
+2. **Cite 3 requisitos funcionais** * * O sistema deve permitir que os professores cadastrem e atualizem as notas dos alunos.
+    * O sistema deve permitir que os alunos consultem suas notas e médias.
+    * O sistema deve permitir que os professores visualizem as notas de suas turmas*.
+3. **Cite 2 requisitos não funcionais** ** O sistema deve garantir segurança e privacidade das informações dos alunos.
+    * O sistema deve apresentar as informações de forma rápida e fácil de usar.*.
+4. **Explique, em poucas palavras**, por que é importante levantar os requisitos antes de desenvolver um software. * Para entender o que os usuários precisam e definir corretamente as funções do sistema, evitando erros e retrabalho durante o desenvolvimento.
 
 ---
 
