@@ -1,5 +1,7 @@
 # Atividade Prática – Introdução à Engenharia de Requisitos
 
+**Alunos(a):** Erica Pereira Da Silva, Ana Beatriz Almeida Ramos.
+
 **Objetivo:** Compreender a importância da Engenharia de Requisitos e identificar requisitos básicos de um sistema.
 
 **Tempo:** 20 a 30 minutos
