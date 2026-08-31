@@ -1,3 +1,4 @@
+# Alunos: Erica Pereira Da Silva, Ana Beatriz Almeida Ramos.
 # Guia Prático - Técnica MoSCoW para Priorização de Requisitos
 
 ## 11. Atividade do grupo - Matriz MOSCOW
