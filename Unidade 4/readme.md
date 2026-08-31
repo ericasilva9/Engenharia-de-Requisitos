@@ -48,7 +48,9 @@ Apliquem a técnica aos requisitos levantados no projeto. Marquem apenas uma cat
 
 ## 13. Desafio - Definindo o MVP
 
-Observem os requisitos classificados como **Must Have** e respondam: com esses requisitos conseguimos entregar uma primeira versão que resolva o problema principal do usuário? Se não, revisem a priorização. Se sim, vocês possuem um primeiro conjunto de requisitos candidatos à entrega inicial.
+Observem os requisitos classificados como **Must Have** e respondam: com esses requisitos conseguimos entregar uma primeira versão que resolva o problema principal do usuário? Sim, com os requisitos classificados como Must Have, conseguimos entregar uma primeira versão que resolve o principal problema do usuário, que é facilitar e organizar o agendamento de consultas.  Se não, revisem a priorização. Se sim, vocês possuem um primeiro conjunto de requisitos candidatos à entrega inicial. 
+
+ 
 
 ---
 
