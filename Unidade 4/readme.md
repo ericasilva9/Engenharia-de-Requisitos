@@ -1,6 +1,3 @@
-Aqui está o texto formatado em **Markdown** dentro de um bloco de código. Você pode simplesmente clicar no botão de **copiar** no canto do bloco e colar diretamente no GitHub:
-
-```markdown
 # Guia Prático - Técnica MoSCoW para Priorização de Requisitos
 
 ## 11. Atividade do grupo - Matriz MOSCOW
