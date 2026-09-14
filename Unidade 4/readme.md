@@ -31,9 +31,9 @@ Apliquem a técnica aos requisitos levantados no projeto. Marquem apenas uma cat
 
 | Ordem | ID | Requisito | Por que precisa permanecer? |
 | :---: | :--- | :--- | :--- |
-| **1** | RF01 | Cadastrar pacientes | Necessário para identificar pacientes. |
+| **1** | RF01 | Cadastrar médicos| Necessário para identificar pacientes. |
 | **2** | RF02 | Agendar consulta | É uma funcionalidade muito importante. |
-| **3** | RF03 | Cadastrar médicos | Necessário para identificar os médicos. |
+| **3** | RF03 | Cadastrar pacientes | Necessário para identificar os médicos. |
 | **4** | RF04 | Cadastrar especialidades | deve ter para esclarecer dúvidas e agendamento de consultas ou exames. |
 | **5** | RF05 | Consultar horários disponível | Essencial para agendamento de consultas ou exames. |
 
