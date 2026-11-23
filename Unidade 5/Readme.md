@@ -7,3 +7,4 @@ recursos da Linguagem de Modelagem Unificada (UML); abordagens ágeis, backlog d
 histórias de usuário e critérios de aceite; prototipação; softwares e ferramentas de apoio. Validação de Requisitos:
 responsabilidades e expectativas na verificação e validação de requisitos; técnicas e ferramentas. Requisitos para
 sistemas de Internet das Coisas (IoT).
+MUDANCA
