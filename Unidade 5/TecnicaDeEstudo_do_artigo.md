@@ -3,7 +3,7 @@
 ## 🎯 Tema Central
 **Jogo Educacional Acessível para UML**
 
-## 🧠 Mapa Mental
+## 🧠
 
 ### 1. Objetivos
 - Incluir pessoas com deficiência visual.
