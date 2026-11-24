@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro e inscrição | Clubify</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="../" data-page="cadastro" class="ref-cadastro">
+  <header class="top" id="topo"></header>
+
+  <main>
+    <div class="steps" id="stepper"></div>
+
+    <div class="card formcard" id="cartao">
+      
+      <div class="bd">
+        <h3 class="center" id="titulo-etapa" style="font-size:22px"></h3><span class="ul c" style="margin-bottom:30px"></span>
+
+        <!-- Etapa 1: dados pessoais -->
+        <section class="etapa" data-etapa="1">
+          <div class="two">
+            <div class="field"><label for="nome">Nome completo *</label><input id="nome" autocomplete="name"></div>
+            <div class="field"><label for="cpf">CPF *</label><input id="cpf" data-mascara="cpf" placeholder="CPF*" inputmode="numeric"></div>
+            <div class="field"><label for="email">E-mail *</label><input type="email" id="email" autocomplete="email"></div>
+            <div class="field"><label for="celular">Celular *</label><input id="celular" data-mascara="celular" placeholder="Celular*" inputmode="tel"></div>
+            <div class="field"><label for="nascimento">Data de nascimento *</label><input type="date" id="nascimento"></div>
+            <div class="field"><label for="categoria">Categoria * <span id="saiba-cat"></span></label>
+              <select id="categoria">
+                <option value="">Selecione</option>
+                <option value="colaborador">Colaborador</option>
+                <option value="docente">Docente</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label class="chk"><input type="checkbox" id="aceite"><span>Aceito a <a href="#" onclick="return false">Política de Privacidade e Tratamento de Dados</a> do clube *</span></label></div>
+          <div class="field"><label class="chk"><input type="checkbox" id="novidades"><span>Aceito receber novidades do clube (opcional)</span></label></div>
+          <p class="muted" style="margin-top:16px"></p>
+        </section>
+
+        <!-- Etapa 2: modalidade -->
+        <section class="etapa hidden" data-etapa="2">
+          <div class="cols">
+            <div id="lista-opcoes"></div>
+            <aside class="resumo" id="resumo"></aside>
+          </div>
+          <div class="err-msg" id="erro-etapa2"></div>
+          <div class="js-avisos-piscina" style="margin-top:20px"></div>
+        </section>
+
+        <!-- Etapa 3: avaliação física e acessibilidade -->
+        <section class="etapa hidden" data-etapa="3">
+          <div class="aviso info" style="margin:0 0 24px">Etapa obrigatória. As respostas servem para o clube se preparar e garantir acessibilidade. Ficam visíveis apenas para você e para a administração.</div>
+          <div id="form-avaliacao"></div>
+        </section>
+
+        <!-- Etapa 4: documentos -->
+        <section class="etapa hidden" data-etapa="4">
+          <div class="stack" id="lista-docs"></div>
+          <div class="aviso info"><img class="icon" src="../assets/img/piscina.png" alt=""> Para as modalidades de piscina, o atestado deve ser entregue antes do primeiro uso.</div>
+          <div class="err-msg" id="erro-etapa4doc"></div>
+        </section>
+
+        <!-- Etapa 5: confirmação -->
+        <section class="etapa hidden" data-etapa="5">
+          <div style="max-width:620px;margin:0 auto" id="resumo-final"></div>
+          <div style="max-width:620px;margin:16px auto 0"><label class="chk"><input type="checkbox" id="ciente-piscina"><span>Li os avisos da piscina e concordo com as regras *</span></label></div>
+          <p class="muted center" style="margin-top:20px">Ao confirmar, sua inscrição será enviada para análise da administração.</p>
+          <div class="err-msg center" id="erro-etapa5"></div>
+        </section>
+      </div>
+      <div class="ft">
+        <button class="btn sec" id="btn-voltar" type="button">Voltar</button>
+        <button class="btn" id="btn-avancar" type="button">Avançar</button>
+      </div>
+    </div>
+
+    <!-- Versão de sucesso (aparece após confirmar) -->
+    <div class="card formcard hidden" id="sucesso">
+      <div class="bd center" style="padding:56px 40px">
+        <div class="sucesso-ico">✓</div>
+        <h2>Inscrição enviada!</h2>
+        <p class="muted" style="margin:10px 0 28px;font-size:16px">Acompanhe a análise dos documentos e as mensalidades na Área do Sócio.</p>
+        <a class="btn" href="painel-socio.html">Ir para o meu painel</a>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape" id="rodape"></footer>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/cadastro.js"></script>
+</body>
+</html>

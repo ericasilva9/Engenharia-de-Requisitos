@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valores e mensalidades | Clubify</title>
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body data-root="../../" data-page="admin-valores">
+  <div class="admin">
+    <aside class="lateral" id="sidebar"></aside>
+    <div class="adm-main">
+      <div class="adm-top">
+        <div><h1>Valores e mensalidades</h1><span class="ul"></span></div>
+        <button class="btn" id="btn-salvar">Salvar valores</button>
+      </div>
+
+      <div class="grid g3" style="margin-bottom:24px">
+        <div class="card stat"><div class="muted">Arrecadação prevista / mês</div><div class="n" id="st-arrec">—</div></div>
+        <div class="card stat"><div class="muted">Custo de manutenção / mês</div><div class="n" id="st-custo">—</div></div>
+        <div class="card stat"><div class="muted">Saldo estimado</div><div class="n" id="st-saldo">—</div></div>
+      </div>
+
+      <div class="cols" style="grid-template-columns:1fr 2fr">
+        <div class="card pad">
+          <h3>Valores por categoria</h3><span class="ul" style="margin:8px 0 16px"></span>
+          <div class="stack" id="campos-planos"></div>
+          <div class="field" style="margin-top:18px"><label for="custo">Custo mensal de manutenção (R$)</label><input type="number" min="0" step="10" id="custo"></div>
+          <p class="muted" style="margin-top:12px">Compare a arrecadação com o custo de manutenção da piscina e do clube para ajustar a mensalidade. Valores de exemplo. A mudança vale para as próximas inscrições.</p>
+        </div>
+        <div class="card pad">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px">
+            <h3>Mensalidades</h3>
+            <div class="field" style="width:200px"><select id="f-mens"><option value="">Todas</option><option value="pendente">Pendentes</option><option value="atrasada">Atrasadas</option><option value="pago">Pagas</option></select></div>
+          </div>
+          <div class="tabela"><table>
+            <thead><tr><th>Sócio</th><th>Mês</th><th>Valor</th><th>Vencimento</th><th>Status</th><th></th></tr></thead>
+            <tbody id="tab-mens"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/auth.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/admin-valores.js"></script>
+</body>
+</html>

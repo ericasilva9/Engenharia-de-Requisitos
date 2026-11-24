@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de modalidades | Clubify</title>
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body data-root="../../" data-page="admin-modalidades">
+  <div class="admin">
+    <aside class="lateral" id="sidebar"></aside>
+    <div class="adm-main">
+      <div class="adm-top">
+        <div><h1>Gestão de modalidades e turmas</h1><span class="ul"></span></div>
+        <button class="btn" id="btn-nova">+ Nova turma</button>
+      </div>
+
+      <div class="card pad piscina-info" id="info-piscina"></div>
+
+      <div class="card tabela"><table>
+        <thead><tr><th>Modalidade</th><th>Dias e horários</th><th>Local</th><th>Professor</th><th>Ocupação</th><th>Ações</th></tr></thead>
+        <tbody id="tab-turmas"></tbody></table></div>
+
+      <!-- Janela: nova modalidade / turma -->
+      <div class="modal-bg" id="modal-turma">
+        <form class="card modal" id="form-turma" novalidate>
+          <h3 id="modal-titulo">Nova turma</h3><span class="ul"></span>
+          <div class="stack">
+            <div class="field"><label for="t-nome">Nome da modalidade *</label><input id="t-nome" list="lista-nomes" placeholder="Ex.: Natação"><datalist id="lista-nomes"></datalist></div>
+            <div class="field"><label for="t-dias">Dias e horários *</label><input id="t-dias" placeholder="Ex.: Seg e qua · 11h–12h"></div>
+            <div class="two">
+              <div class="field"><label for="t-local">Local *</label><input id="t-local" placeholder="Ex.: Piscina"></div>
+              <div class="field"><label for="t-prof">Professor responsável *</label><input id="t-prof"></div>
+            </div>
+            <div class="field"><label for="t-vagas">Vagas (máx. 10) *</label><input type="number" min="1" max="10" id="t-vagas"></div>
+          </div>
+          <div class="rodape-modal"><button class="btn sec" type="button" data-fechar>Cancelar</button><button class="btn" type="submit">Salvar</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/auth.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/admin-modalidades.js"></script>
+</body>
+</html>

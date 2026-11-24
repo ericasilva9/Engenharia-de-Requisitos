@@ -1,0 +1,338 @@
+{
+  "socios": [
+    {
+      "id": 1,
+      "tipo": "admin",
+      "nome": "Administrador do Clube",
+      "email": "admin@clubify.com",
+      "senha": "admin123",
+      "cpf": "",
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "tipo": "socio",
+      "nome": "Maria Souza Lima",
+      "email": "maria@exemplo.com",
+      "cpf": "000.000.000-00",
+      "celular": "(61) 90000-0000",
+      "dataNascimento": "1988-03-12",
+      "categoria": "docente",
+      "matricula": "20260002",
+      "ativo": true,
+      "dataCadastro": "2026-08-10"
+    },
+    {
+      "id": 3,
+      "tipo": "socio",
+      "nome": "João Pereira",
+      "email": "joao@exemplo.com",
+      "cpf": "111.111.111-11",
+      "celular": "(61) 91111-1111",
+      "dataNascimento": "1992-07-25",
+      "categoria": "colaborador",
+      "matricula": "20260003",
+      "ativo": true,
+      "dataCadastro": "2026-08-10"
+    },
+    {
+      "id": 4,
+      "tipo": "socio",
+      "nome": "Ana Carvalho",
+      "email": "ana@exemplo.com",
+      "cpf": "222.222.222-22",
+      "celular": "(61) 92222-2222",
+      "dataNascimento": "1985-11-02",
+      "categoria": "docente",
+      "matricula": "20260004",
+      "ativo": true,
+      "dataCadastro": "2026-08-10"
+    },
+    {
+      "id": 5,
+      "tipo": "socio",
+      "nome": "Carlos Mendes",
+      "email": "carlos@exemplo.com",
+      "cpf": "333.333.333-33",
+      "celular": "(61) 93333-3333",
+      "dataNascimento": "1991-01-30",
+      "categoria": "colaborador",
+      "matricula": "20260005",
+      "ativo": true,
+      "dataCadastro": "2026-08-10"
+    },
+    {
+      "id": 6,
+      "tipo": "socio",
+      "nome": "Beatriz Lopes",
+      "email": "beatriz@exemplo.com",
+      "cpf": "444.444.444-44",
+      "celular": "(61) 94444-4444",
+      "dataNascimento": "1990-05-18",
+      "categoria": "colaborador",
+      "matricula": "20260006",
+      "ativo": true,
+      "dataCadastro": "2026-08-10"
+    }
+  ],
+  "documentos": [
+    {
+      "id": 1,
+      "socioId": 2,
+      "tipo": "atestado",
+      "nomeArquivo": "atestado-maria.pdf",
+      "status": "pendente"
+    },
+    {
+      "id": 2,
+      "socioId": 2,
+      "tipo": "vinculo",
+      "nomeArquivo": "contracheque-maria.pdf",
+      "status": "aprovado"
+    },
+    {
+      "id": 3,
+      "socioId": 3,
+      "tipo": "atestado",
+      "nomeArquivo": "atestado-joao.pdf",
+      "status": "aprovado"
+    },
+    {
+      "id": 4,
+      "socioId": 3,
+      "tipo": "vinculo",
+      "nomeArquivo": "contracheque-joao.pdf",
+      "status": "aprovado"
+    },
+    {
+      "id": 5,
+      "socioId": 4,
+      "tipo": "atestado",
+      "nomeArquivo": "atestado-ana.pdf",
+      "status": "aprovado"
+    },
+    {
+      "id": 6,
+      "socioId": 4,
+      "tipo": "vinculo",
+      "nomeArquivo": "contracheque-ana.pdf",
+      "status": "aprovado"
+    },
+    {
+      "id": 7,
+      "socioId": 5,
+      "tipo": "atestado",
+      "nomeArquivo": "atestado-carlos.pdf",
+      "status": "recusado"
+    },
+    {
+      "id": 8,
+      "socioId": 5,
+      "tipo": "vinculo",
+      "nomeArquivo": "contracheque-carlos.pdf",
+      "status": "aprovado"
+    },
+    {
+      "id": 9,
+      "socioId": 6,
+      "tipo": "atestado",
+      "nomeArquivo": "atestado-beatriz.pdf",
+      "status": "pendente"
+    },
+    {
+      "id": 10,
+      "socioId": 6,
+      "tipo": "vinculo",
+      "nomeArquivo": "contracheque-beatriz.pdf",
+      "status": "aprovado"
+    }
+  ],
+  "inscricoes": [
+    {
+      "id": 1,
+      "socioId": 2,
+      "modalidadeId": 1,
+      "turmaId": 1,
+      "categoria": "docente",
+      "data": "2026-08-10",
+      "status": "pendente",
+      "periodo": "2º/2026"
+    },
+    {
+      "id": 2,
+      "socioId": 3,
+      "modalidadeId": 3,
+      "turmaId": 1,
+      "categoria": "colaborador",
+      "data": "2026-08-10",
+      "status": "ativa",
+      "periodo": "2º/2026"
+    },
+    {
+      "id": 3,
+      "socioId": 4,
+      "modalidadeId": 2,
+      "turmaId": 2,
+      "categoria": "docente",
+      "data": "2026-08-10",
+      "status": "ativa",
+      "periodo": "2º/2026"
+    },
+    {
+      "id": 4,
+      "socioId": 5,
+      "modalidadeId": 4,
+      "turmaId": 2,
+      "categoria": "colaborador",
+      "data": "2026-08-10",
+      "status": "pendente",
+      "periodo": "2º/2026"
+    },
+    {
+      "id": 5,
+      "socioId": 6,
+      "modalidadeId": 3,
+      "turmaId": 1,
+      "categoria": "colaborador",
+      "data": "2026-08-10",
+      "status": "pendente",
+      "periodo": "2º/2026"
+    }
+  ],
+  "mensalidades": [
+    {
+      "id": 1,
+      "inscricaoId": 1,
+      "socioId": 2,
+      "competencia": "Novembro/2026",
+      "valor": 120,
+      "vencimento": "2026-11-10",
+      "status": "pago",
+      "dataPagamento": "2026-11-05"
+    },
+    {
+      "id": 2,
+      "inscricaoId": 1,
+      "socioId": 2,
+      "competencia": "Dezembro/2026",
+      "valor": 120,
+      "vencimento": "2026-12-10",
+      "status": "pendente",
+      "dataPagamento": null
+    },
+    {
+      "id": 3,
+      "inscricaoId": 2,
+      "socioId": 3,
+      "competencia": "Novembro/2026",
+      "valor": 120,
+      "vencimento": "2026-11-10",
+      "status": "pendente",
+      "dataPagamento": null
+    },
+    {
+      "id": 4,
+      "inscricaoId": 2,
+      "socioId": 3,
+      "competencia": "Dezembro/2026",
+      "valor": 120,
+      "vencimento": "2026-12-10",
+      "status": "pendente",
+      "dataPagamento": null
+    },
+    {
+      "id": 5,
+      "inscricaoId": 3,
+      "socioId": 4,
+      "competencia": "Novembro/2026",
+      "valor": 120,
+      "vencimento": "2026-11-10",
+      "status": "pago",
+      "dataPagamento": "2026-11-05"
+    },
+    {
+      "id": 6,
+      "inscricaoId": 3,
+      "socioId": 4,
+      "competencia": "Dezembro/2026",
+      "valor": 120,
+      "vencimento": "2026-12-10",
+      "status": "pendente",
+      "dataPagamento": null
+    },
+    {
+      "id": 7,
+      "inscricaoId": 4,
+      "socioId": 5,
+      "competencia": "Novembro/2026",
+      "valor": 120,
+      "vencimento": "2026-11-10",
+      "status": "pendente",
+      "dataPagamento": null
+    },
+    {
+      "id": 8,
+      "inscricaoId": 4,
+      "socioId": 5,
+      "competencia": "Dezembro/2026",
+      "valor": 120,
+      "vencimento": "2026-12-10",
+      "status": "pendente",
+      "dataPagamento": null
+    },
+    {
+      "id": 9,
+      "inscricaoId": 5,
+      "socioId": 6,
+      "competencia": "Novembro/2026",
+      "valor": 120,
+      "vencimento": "2026-11-10",
+      "status": "pago",
+      "dataPagamento": "2026-11-05"
+    },
+    {
+      "id": 10,
+      "inscricaoId": 5,
+      "socioId": 6,
+      "competencia": "Dezembro/2026",
+      "valor": 120,
+      "vencimento": "2026-12-10",
+      "status": "pendente",
+      "dataPagamento": null
+    }
+  ],
+  "avaliacoes": [
+    {
+      "socioId": 2,
+      "dificuldade": false,
+      "apoio": false,
+      "nivel": "basico",
+      "obs": "",
+      "data": "2026-08-10"
+    },
+    {
+      "socioId": 3,
+      "dificuldade": false,
+      "apoio": false,
+      "nivel": "intermediario",
+      "obs": "",
+      "data": "2026-08-10"
+    },
+    {
+      "socioId": 4,
+      "dificuldade": false,
+      "apoio": false,
+      "nivel": "avancado",
+      "obs": "",
+      "data": "2026-08-10"
+    },
+    {
+      "socioId": 6,
+      "dificuldade": true,
+      "apoio": true,
+      "nivel": "basico",
+      "obs": "Dificuldade de equilíbrio; precisa de apoio na entrada da piscina.",
+      "data": "2026-08-10"
+    }
+  ]
+}

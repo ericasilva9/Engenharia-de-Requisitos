@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhe do sócio | Clubify</title>
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body data-root="../../" data-page="admin-socios">
+  <div class="admin">
+    <aside class="lateral" id="sidebar"></aside>
+    <div class="adm-main">
+      <div class="adm-top">
+        <div><h1 id="titulo">Sócio</h1><span class="ul"></span></div>
+        <a class="btn sec" href="socios.html">← Voltar à lista</a>
+      </div>
+
+      <div class="cols" style="grid-template-columns:1fr 1fr">
+        <form class="card pad sec-card" id="form-dados" novalidate>
+          <h3><img class="icon lg" src="../../assets/img/usuario.png" alt=""> Dados pessoais</h3>
+          <div class="stack">
+            <div class="field"><label for="nome">Nome completo *</label><input id="nome"></div>
+            <div class="two">
+              <div class="field"><label for="cpf">CPF *</label><input id="cpf" data-mascara="cpf"></div>
+              <div class="field"><label for="celular">Celular *</label><input id="celular" data-mascara="celular"></div>
+            </div>
+            <div class="field"><label for="email">E-mail *</label><input type="email" id="email"></div>
+            <div class="two">
+              <div class="field"><label for="nascimento">Data de nascimento *</label><input type="date" id="nascimento"></div>
+              <div class="field"><label for="categoria">Categoria *</label><select id="categoria">
+                <option value="colaborador">Colaborador</option><option value="docente">Docente</option></select></div>
+            </div>
+          </div>
+          <div style="margin-top:22px"><button class="btn sm" type="submit">Salvar</button></div>
+        </form>
+
+        <div>
+          <div class="card pad sec-card"><h3>Avaliação física e acessibilidade</h3><div id="avaliacao"></div></div>
+          <div class="card pad sec-card"><h3>Documentos</h3><div id="lista-docs"></div></div>
+          <div class="card pad sec-card"><h3>Inscrições</h3>
+            <div class="tabela"><table><thead><tr><th>Modalidade</th><th>Turma</th><th>Status</th></tr></thead><tbody id="tab-inscricoes"></tbody></table></div></div>
+        </div>
+      </div>
+
+      <div class="card pad sec-card"><h3>Mensalidades</h3>
+        <div class="tabela"><table><thead><tr><th>Mês</th><th>Valor</th><th>Vencimento</th><th>Status</th><th></th></tr></thead><tbody id="tab-mensalidades"></tbody></table></div></div>
+    </div>
+  </div>
+
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/auth.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/admin-detalhe.js"></script>
+</body>
+</html>

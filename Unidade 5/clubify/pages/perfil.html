@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu perfil | Clubify</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="../" data-page="perfil">
+  <header class="top" id="topo"></header>
+
+  <main>
+    <div class="wrap" style="padding-top:48px">
+      <h1 style="font-size:34px">Meu perfil</h1><span class="ul"></span>
+      <div class="tabs" id="abas">
+        <button type="button" class="on" data-aba="dados">Dados cadastrais</button>
+        <button type="button" data-aba="acess">Acessibilidade</button>
+        <button type="button" data-aba="docs">Documentos</button>
+      </div>
+
+      <form class="card pad aba" id="form-perfil" data-painel="dados" novalidate>
+        <h3 style="margin-bottom:20px"><img class="icon lg" src="../assets/img/usuario.png" alt=""> Dados cadastrais</h3>
+        <div class="two">
+          <div class="field"><label for="nome">Nome completo *</label><input id="nome"></div>
+          <div class="field"><label for="cpf">CPF</label><input id="cpf" disabled></div>
+          <div class="field"><label for="email">E-mail *</label><input type="email" id="email"></div>
+          <div class="field"><label for="celular">Celular *</label><input id="celular" data-mascara="celular"></div>
+          <div class="field"><label for="nascimento">Data de nascimento *</label><input type="date" id="nascimento"></div>
+          <div class="field"><label for="categoria">Categoria</label><input id="categoria" disabled></div>
+        </div>
+        <p class="muted" style="margin-top:14px">Para alterar CPF ou categoria, procure a administração do clube.</p>
+        <div style="margin-top:24px;display:flex;gap:12px">
+          <button class="btn" type="submit">Salvar alterações</button>
+          <a class="btn sec" href="painel-socio.html">Cancelar</a>
+        </div>
+      </form>
+
+      <div class="card pad aba hidden" id="aba-acess" data-painel="acess">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+          <h3>Minha acessibilidade</h3><span id="status-aval"></span>
+        </div>
+        <span class="ul" style="margin:8px 0 18px"></span>
+        <div id="resumo-aval"></div>
+        <form id="form-aval" class="hidden" novalidate>
+          <div id="campos-aval"></div>
+          <div style="margin-top:20px;display:flex;gap:12px"><button class="btn" type="submit">Salvar avaliação</button><button class="btn sec" type="button" id="cancelar-aval">Cancelar</button></div>
+        </form>
+        <div id="acoes-aval">
+          <div class="aviso info">Mudou alguma coisa? Atualize suas respostas para o clube se preparar.</div>
+          <div style="margin-top:20px"><button class="btn" type="button" id="atualizar-aval">Atualizar avaliação</button></div>
+        </div>
+      </div>
+
+      <div class="card pad aba hidden" id="aba-docs" data-painel="docs">
+        <h3>Documentos enviados</h3><span class="ul" style="margin:8px 0 12px"></span>
+        <div id="lista-docs"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape" id="rodape"></footer>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/perfil.js"></script>
+</body>
+</html>

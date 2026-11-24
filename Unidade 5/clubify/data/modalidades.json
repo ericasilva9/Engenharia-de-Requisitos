@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nome": "Natação",
+    "icone": "natacao.png",
+    "piscina": true,
+    "local": "Bloco 10",
+    "turmas": [
+      {
+        "id": 1,
+        "dias": "Segunda e quarta",
+        "horario": "6h30–7h30",
+        "vagas": 10,
+        "professor": "Prof. Rafael"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Nado Livre",
+    "icone": "piscina.png",
+    "piscina": true,
+    "local": "Piscina",
+    "turmas": [
+      {
+        "id": 2,
+        "dias": "Segunda e quarta",
+        "horario": "13h–19h",
+        "vagas": 10,
+        "professor": "Prof. Rafael"
+      }
+    ]
+  }
+]

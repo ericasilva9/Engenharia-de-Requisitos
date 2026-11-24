@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "categoria": "colaborador",
+    "nome": "Colaborador",
+    "valor": 150
+  },
+  {
+    "id": 2,
+    "categoria": "docente",
+    "nome": "Docente",
+    "valor": 120
+  }
+]

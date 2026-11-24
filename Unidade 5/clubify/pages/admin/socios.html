@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de sócios | Clubify</title>
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body data-root="../../" data-page="admin-socios">
+  <div class="admin">
+    <aside class="lateral" id="sidebar"></aside>
+    <div class="adm-main">
+      <div class="adm-top">
+        <div><h1>Gestão de sócios</h1><span class="ul"></span></div>
+        <button class="btn" id="btn-novo">+ Novo sócio</button>
+      </div>
+
+      <div class="filtros">
+        <div class="field"><input id="busca" placeholder="Buscar por nome ou CPF"></div>
+        <div class="field"><select id="f-categoria">
+          <option value="">Todas as categorias</option><option value="colaborador">Colaborador</option><option value="docente">Docente</option></select></div>
+        <div class="field"><select id="f-status">
+          <option value="">Todos os status</option><option value="ativo">Ativo</option><option value="inativo">Inativo</option></select></div>
+      </div>
+
+      <div class="card tabela"><table>
+        <thead><tr><th>Nome</th><th>CPF</th><th>Categoria</th><th>Modalidade</th><th>Documentos</th><th>Avaliação</th><th>Mensalidade</th><th>Ações</th></tr></thead>
+        <tbody id="tab-socios"></tbody></table></div>
+      <div class="pag"><span id="pag-info"></span><span id="pag-botoes"></span></div>
+
+      <!-- Janela: novo sócio -->
+      <div class="modal-bg" id="modal-socio">
+        <form class="card modal" id="form-socio" novalidate>
+          <h3>Novo sócio</h3><span class="ul"></span>
+          <div class="stack">
+            <div class="field"><label for="n-nome">Nome completo *</label><input id="n-nome"></div>
+            <div class="two">
+              <div class="field"><label for="n-cpf">CPF *</label><input id="n-cpf" data-mascara="cpf"></div>
+              <div class="field"><label for="n-celular">Celular *</label><input id="n-celular" data-mascara="celular"></div>
+            </div>
+            <div class="field"><label for="n-email">E-mail *</label><input type="email" id="n-email"></div>
+            <div class="two">
+              <div class="field"><label for="n-nasc">Data de nascimento *</label><input type="date" id="n-nasc"></div>
+              <div class="field"><label for="n-categoria">Categoria *</label><select id="n-categoria">
+                <option value="">Selecione</option><option value="colaborador">Colaborador</option><option value="docente">Docente</option></select></div>
+            </div>
+          </div>
+          <div class="rodape-modal"><button class="btn sec" type="button" data-fechar>Cancelar</button><button class="btn" type="submit">Salvar</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/auth.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/admin-socios.js"></script>
+</body>
+</html>
